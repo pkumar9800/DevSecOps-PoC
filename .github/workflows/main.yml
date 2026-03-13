@@ -32,7 +32,7 @@ jobs:
           cyclonedx-npm --output-format JSON --output-file sbom.json
 
       - name: Upload SBOM for Audit
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: software-bill-of-materials
           path: sbom.json
